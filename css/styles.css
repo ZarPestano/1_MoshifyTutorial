@@ -10,11 +10,11 @@ html {
 
 /* Colors - Global Variables  */
 :root {
-  --color-primary: #2584ff;
-  --color-secondary: #00d9ff;
-  --color-accent: #ff3400;
-  --color-headings: #1b0760;
-  --color-body: #918ca4;
+  --primary-color: #2584ff;
+  --secondary-color: #00d9ff;
+  --accent-color: #ff3400;
+  --headings-color: #1b0760;
+  --body-color: #918ca4;
   --desktop-px: 1024px;
 }
 
@@ -22,13 +22,13 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
-  color: var(--color-body);
+  color: var(--body-color);
 }
 
 h1,
 h2,
 h3 {
-  color: var(--color-headings);
+  color: var(--headings-color);
   margin-bottom: 1rem;
 }
 
@@ -48,7 +48,7 @@ p {
   margin-top: 0;
 }
 
-@media screen and (min-width: var(--desktop-px)) {
+@media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
   }
@@ -73,7 +73,7 @@ a {
 }
 
 .link-arrow {
-  color: var(--color-accent);
+  color: var(--accent-color);
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
@@ -89,8 +89,42 @@ a {
   margin-left: 10px;
 }
 
-@media screen and (min-width: var(--desktop-px)) {
+@media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+
+/* Badges  */
+
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
