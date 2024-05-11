@@ -157,3 +157,25 @@ a {
     padding-left: 0;
   }
 }
+
+/* ICONS */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  /* fill only applies to svg images  */
+  fill: var(--primary-color);
+}
+
+.icon-container {
+  /* absolute units used b/c icons are fixed size in mobile/desktop */
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
